@@ -21,8 +21,9 @@ import java.io.IOException;
 
 public class TruncMessageJsonProviderBenchmark {
     private static final int MAX_LEN = 2 * 1024 * 1024;      // 2097152
+    private static final String SMALL_LEN = "500";
     private static final String MAX_LEN_BUT_ONE = "2097151"; // 2 * 1024 * 1024 - 1
-    private static final String MAX_LEN_TWICE = "4194304";   // 3 * 1024 * 1024
+    private static final String MAX_LEN_TWICE = "4194304";   // 4 * 1024 * 1024
     private static final String MAX_LEN_AND_ONE = "2097153"; // 2 * 1024 * 1024 + 1
 
 
@@ -30,7 +31,7 @@ public class TruncMessageJsonProviderBenchmark {
     @BenchmarkMode(Mode.AverageTime)
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 1)
-    @Measurement(iterations = 2)
+    @Measurement(iterations = 3)
     public void writeWithTruncProvider(BenchmarkState state) throws IOException {
         state.truncProvider.writeTo(state.jsonGenerator, state.event);
     }
@@ -39,14 +40,14 @@ public class TruncMessageJsonProviderBenchmark {
     @BenchmarkMode(Mode.AverageTime)
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 1)
-    @Measurement(iterations = 2)
+    @Measurement(iterations = 3)
     public void writeWithDefaultProvider(BenchmarkState state) throws IOException {
         state.defaultProvider.writeTo(state.jsonGenerator, state.event);
     }
 
     @State(Scope.Thread)
     public static class BenchmarkState {
-        @Param({MAX_LEN_BUT_ONE, MAX_LEN_AND_ONE, MAX_LEN_TWICE})
+        @Param({SMALL_LEN, MAX_LEN_BUT_ONE, MAX_LEN_AND_ONE, MAX_LEN_TWICE})
         public int messageLen;
 
         public JsonGenerator jsonGenerator;
