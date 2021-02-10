@@ -10,6 +10,8 @@ Custom Logback JsonProvider truncates etremely long log lines ('message' field)
 
 ## Benchmark results
 
+Benchmark is performed with max message length triggering truncation - 2097152 (2 * 1024 * 1024)
+
       Benchmark                                                   (messageLen)  Mode  Cnt   Score    Error  Units
       TruncMessageJsonProviderBenchmark.writeWithDefaultProvider           500  avgt    3  ≈ 10⁻⁹            s/op
       TruncMessageJsonProviderBenchmark.writeWithDefaultProvider       2097151  avgt    3  ≈ 10⁻⁹            s/op
