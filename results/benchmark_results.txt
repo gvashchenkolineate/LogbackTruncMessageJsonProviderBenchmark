@@ -11,27 +11,29 @@ WARNING: All illegal access operations will be denied in a future release
 # Measurement: 3 iterations, 10 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
+# Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider
 # Parameters: (messageLen = 500)
 
 # Run progress: 0.00% complete, ETA 00:10:40
 # Warmup Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 326506182.807 ops/s
+Iteration   1: 326967508.360 ops/s
+Iteration   2: 337862044.662 ops/s
+Iteration   3: 333797586.764 ops/s
 
-# Run progress: 6.25% complete, ETA 00:10:04
+# Run progress: 6.25% complete, ETA 00:10:10
 # Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 344386041.621 ops/s
+Iteration   1: 340746767.249 ops/s
+Iteration   2: 321281537.510 ops/s
+Iteration   3: 318708726.834 ops/s
 
 
 Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider":
-  ≈ 10⁻⁹ s/op
+  326912343.864 ±(99.9%) 219833672.249 ops/s [Average]
+  (min, avg, max) = (318708726.834, 326912343.864, 340746767.249), stdev = 12049825.371
+  CI (99.9%): [107078671.615, 546746016.114] (assumes normal distribution)
 
 
 # JMH version: 1.27
@@ -43,27 +45,29 @@ Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider":
 # Measurement: 3 iterations, 10 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
+# Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider
 # Parameters: (messageLen = 2097151)
 
-# Run progress: 12.50% complete, ETA 00:09:24
+# Run progress: 12.50% complete, ETA 00:09:30
 # Warmup Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 347375738.803 ops/s
+Iteration   1: 350119686.818 ops/s
+Iteration   2: 292654469.734 ops/s
+Iteration   3: 324703702.024 ops/s
 
-# Run progress: 18.75% complete, ETA 00:08:43
+# Run progress: 18.75% complete, ETA 00:08:50
 # Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 332154298.609 ops/s
+Iteration   1: 353029367.801 ops/s
+Iteration   2: 331936719.957 ops/s
+Iteration   3: 291202833.077 ops/s
 
 
 Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider":
-  ≈ 10⁻⁹ s/op
+  325389640.278 ±(99.9%) 573380870.474 ops/s [Average]
+  (min, avg, max) = (291202833.077, 325389640.278, 353029367.801), stdev = 31428940.298
+  CI (99.9%): [≈ 0, 898770510.752] (assumes normal distribution)
 
 
 # JMH version: 1.27
@@ -75,27 +79,29 @@ Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider":
 # Measurement: 3 iterations, 10 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
+# Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider
 # Parameters: (messageLen = 2097153)
 
-# Run progress: 25.00% complete, ETA 00:08:03
+# Run progress: 25.00% complete, ETA 00:08:10
 # Warmup Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 341154715.464 ops/s
+Iteration   1: 287429783.959 ops/s
+Iteration   2: 309220310.333 ops/s
+Iteration   3: 263317258.102 ops/s
 
-# Run progress: 31.25% complete, ETA 00:07:23
+# Run progress: 31.25% complete, ETA 00:07:29
 # Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 364343217.002 ops/s
+Iteration   1: 381291417.796 ops/s
+Iteration   2: 352299664.140 ops/s
+Iteration   3: 360735362.704 ops/s
 
 
 Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider":
-  ≈ 10⁻⁹ s/op
+  364775481.547 ±(99.9%) 272053219.236 ops/s [Average]
+  (min, avg, max) = (352299664.140, 364775481.547, 381291417.796), stdev = 14912154.949
+  CI (99.9%): [92722262.311, 636828700.782] (assumes normal distribution)
 
 
 # JMH version: 1.27
@@ -107,27 +113,29 @@ Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider":
 # Measurement: 3 iterations, 10 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
+# Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider
 # Parameters: (messageLen = 4194304)
 
-# Run progress: 37.50% complete, ETA 00:06:43
+# Run progress: 37.50% complete, ETA 00:06:47
 # Warmup Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 367727579.952 ops/s
+Iteration   1: 316282007.212 ops/s
+Iteration   2: 316192398.055 ops/s
+Iteration   3: 359257110.479 ops/s
 
-# Run progress: 43.75% complete, ETA 00:06:02
+# Run progress: 43.75% complete, ETA 00:06:06
 # Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 372882178.455 ops/s
+Iteration   1: 388626530.589 ops/s
+Iteration   2: 360843298.418 ops/s
+Iteration   3: 350289949.634 ops/s
 
 
 Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider":
-  ≈ 10⁻⁹ s/op
+  366586592.880 ±(99.9%) 361282109.407 ops/s [Average]
+  (min, avg, max) = (350289949.634, 366586592.880, 388626530.589), stdev = 19803091.509
+  CI (99.9%): [5304483.473, 727868702.288] (assumes normal distribution)
 
 
 # JMH version: 1.27
@@ -139,27 +147,29 @@ Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithDefaultProvider":
 # Measurement: 3 iterations, 10 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
+# Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider
 # Parameters: (messageLen = 500)
 
-# Run progress: 50.00% complete, ETA 00:05:22
+# Run progress: 50.00% complete, ETA 00:05:25
 # Warmup Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁸ s/op
-Iteration   1: ≈ 10⁻⁸ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 272780537.888 ops/s
+Iteration   1: 268542894.911 ops/s
+Iteration   2: 293751858.838 ops/s
+Iteration   3: 256214834.801 ops/s
 
-# Run progress: 56.25% complete, ETA 00:04:42
+# Run progress: 56.25% complete, ETA 00:04:45
 # Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁸ s/op
-Iteration   1: ≈ 10⁻⁸ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 251842072.085 ops/s
+Iteration   1: 278215524.793 ops/s
+Iteration   2: 311839776.563 ops/s
+Iteration   3: 300281721.908 ops/s
 
 
 Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider":
-  ≈ 10⁻⁹ s/op
+  296779007.755 ±(99.9%) 311668429.904 ops/s [Average]
+  (min, avg, max) = (278215524.793, 296779007.755, 311839776.563), stdev = 17083598.321
+  CI (99.9%): [≈ 0, 608447437.659] (assumes normal distribution)
 
 
 # JMH version: 1.27
@@ -171,27 +181,29 @@ Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider":
 # Measurement: 3 iterations, 10 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
+# Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider
 # Parameters: (messageLen = 2097151)
 
-# Run progress: 62.50% complete, ETA 00:04:01
+# Run progress: 62.50% complete, ETA 00:04:04
 # Warmup Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁸ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 292535275.452 ops/s
+Iteration   1: 268744556.182 ops/s
+Iteration   2: 307288782.744 ops/s
+Iteration   3: 306980430.283 ops/s
 
-# Run progress: 68.75% complete, ETA 00:03:21
+# Run progress: 68.75% complete, ETA 00:03:23
 # Fork: 1 of 1
-# Warmup Iteration   1: ≈ 10⁻⁹ s/op
-Iteration   1: ≈ 10⁻⁸ s/op
-Iteration   2: ≈ 10⁻⁹ s/op
-Iteration   3: ≈ 10⁻⁹ s/op
+# Warmup Iteration   1: 281866863.018 ops/s
+Iteration   1: 269326760.545 ops/s
+Iteration   2: 277122021.816 ops/s
+Iteration   3: 268044464.285 ops/s
 
 
 Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider":
-  ≈ 10⁻⁹ s/op
+  271497748.882 ±(99.9%) 89627392.359 ops/s [Average]
+  (min, avg, max) = (268044464.285, 271497748.882, 277122021.816), stdev = 4912779.809
+  CI (99.9%): [181870356.523, 361125141.242] (assumes normal distribution)
 
 
 # JMH version: 1.27
@@ -203,29 +215,29 @@ Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider":
 # Measurement: 3 iterations, 10 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
+# Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider
 # Parameters: (messageLen = 2097153)
 
-# Run progress: 75.00% complete, ETA 00:02:41
+# Run progress: 75.00% complete, ETA 00:02:42
 # Warmup Fork: 1 of 1
-# Warmup Iteration   1: 0.002 s/op
-Iteration   1: 0.002 s/op
-Iteration   2: 0.002 s/op
-Iteration   3: 0.001 s/op
+# Warmup Iteration   1: 251.955 ops/s
+Iteration   1: 257.337 ops/s
+Iteration   2: 262.375 ops/s
+Iteration   3: 276.329 ops/s
 
-# Run progress: 81.25% complete, ETA 00:02:00
+# Run progress: 81.25% complete, ETA 00:02:02
 # Fork: 1 of 1
-# Warmup Iteration   1: 0.002 s/op
-Iteration   1: 0.001 s/op
-Iteration   2: 0.001 s/op
-Iteration   3: 0.001 s/op
+# Warmup Iteration   1: 279.338 ops/s
+Iteration   1: 292.771 ops/s
+Iteration   2: 285.363 ops/s
+Iteration   3: 269.309 ops/s
 
 
 Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider":
-  0.001 ±(99.9%) 0.001 s/op [Average]
-  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
-  CI (99.9%): [0.001, 0.002] (assumes normal distribution)
+  282.481 ±(99.9%) 218.805 ops/s [Average]
+  (min, avg, max) = (269.309, 282.481, 292.771), stdev = 11.993
+  CI (99.9%): [63.677, 501.286] (assumes normal distribution)
 
 
 # JMH version: 1.27
@@ -237,32 +249,32 @@ Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider":
 # Measurement: 3 iterations, 10 s each
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Average time, time/op
+# Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider
 # Parameters: (messageLen = 4194304)
 
-# Run progress: 87.50% complete, ETA 00:01:20
+# Run progress: 87.50% complete, ETA 00:01:21
 # Warmup Fork: 1 of 1
-# Warmup Iteration   1: 0.002 s/op
-Iteration   1: 0.001 s/op
-Iteration   2: 0.001 s/op
-Iteration   3: 0.001 s/op
+# Warmup Iteration   1: 267.046 ops/s
+Iteration   1: 272.405 ops/s
+Iteration   2: 282.115 ops/s
+Iteration   3: 282.846 ops/s
 
 # Run progress: 93.75% complete, ETA 00:00:40
 # Fork: 1 of 1
-# Warmup Iteration   1: 0.002 s/op
-Iteration   1: 0.001 s/op
-Iteration   2: 0.001 s/op
-Iteration   3: 0.001 s/op
+# Warmup Iteration   1: 254.839 ops/s
+Iteration   1: 284.470 ops/s
+Iteration   2: 272.681 ops/s
+Iteration   3: 291.316 ops/s
 
 
 Result "org.sample.TruncMessageJsonProviderBenchmark.writeWithTruncProvider":
-  0.001 ±(99.9%) 0.001 s/op [Average]
-  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
-  CI (99.9%): [0.001, 0.001] (assumes normal distribution)
+  282.822 ±(99.9%) 171.973 ops/s [Average]
+  (min, avg, max) = (272.681, 282.822, 291.316), stdev = 9.426
+  CI (99.9%): [110.849, 454.795] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:10:45
+# Run complete. Total time: 00:10:52
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -270,12 +282,12 @@ experiments, perform baseline and negative tests that provide experimental contr
 the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
 Do not assume the numbers tell you what you want them to tell.
 
-Benchmark                                                   (messageLen)  Mode  Cnt   Score    Error  Units
-TruncMessageJsonProviderBenchmark.writeWithDefaultProvider           500  avgt    3  ≈ 10⁻⁹            s/op
-TruncMessageJsonProviderBenchmark.writeWithDefaultProvider       2097151  avgt    3  ≈ 10⁻⁹            s/op
-TruncMessageJsonProviderBenchmark.writeWithDefaultProvider       2097153  avgt    3  ≈ 10⁻⁹            s/op
-TruncMessageJsonProviderBenchmark.writeWithDefaultProvider       4194304  avgt    3  ≈ 10⁻⁹            s/op
-TruncMessageJsonProviderBenchmark.writeWithTruncProvider             500  avgt    3  ≈ 10⁻⁹            s/op
-TruncMessageJsonProviderBenchmark.writeWithTruncProvider         2097151  avgt    3  ≈ 10⁻⁹            s/op
-TruncMessageJsonProviderBenchmark.writeWithTruncProvider         2097153  avgt    3   0.001 ±  0.001   s/op
-TruncMessageJsonProviderBenchmark.writeWithTruncProvider         4194304  avgt    3   0.001 ±  0.001   s/op
+Benchmark                                                   (messageLen)   Mode  Cnt          Score           Error  Units
+TruncMessageJsonProviderBenchmark.writeWithDefaultProvider           500  thrpt    3  326912343.864 ± 219833672.249  ops/s
+TruncMessageJsonProviderBenchmark.writeWithDefaultProvider       2097151  thrpt    3  325389640.278 ± 573380870.474  ops/s
+TruncMessageJsonProviderBenchmark.writeWithDefaultProvider       2097153  thrpt    3  364775481.547 ± 272053219.236  ops/s
+TruncMessageJsonProviderBenchmark.writeWithDefaultProvider       4194304  thrpt    3  366586592.880 ± 361282109.407  ops/s
+TruncMessageJsonProviderBenchmark.writeWithTruncProvider             500  thrpt    3  296779007.755 ± 311668429.904  ops/s
+TruncMessageJsonProviderBenchmark.writeWithTruncProvider         2097151  thrpt    3  271497748.882 ±  89627392.359  ops/s
+TruncMessageJsonProviderBenchmark.writeWithTruncProvider         2097153  thrpt    3        282.481 ±       218.805  ops/s
+TruncMessageJsonProviderBenchmark.writeWithTruncProvider         4194304  thrpt    3        282.822 ±       171.973  ops/s

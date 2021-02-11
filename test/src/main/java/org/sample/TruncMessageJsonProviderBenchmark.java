@@ -28,7 +28,7 @@ public class TruncMessageJsonProviderBenchmark {
 
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
+    @BenchmarkMode(Mode.Throughput)
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 1)
     @Measurement(iterations = 3)
@@ -37,7 +37,7 @@ public class TruncMessageJsonProviderBenchmark {
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
+    @BenchmarkMode(Mode.Throughput)
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 1)
     @Measurement(iterations = 3)
