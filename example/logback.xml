@@ -1,0 +1,34 @@
+<configuration>
+
+    <appender name="CONSOLE_PLAIN_TEXT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %black(%d{UTC}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg %X{RequestID} %n%throwable
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ROLLING_FILE_JSON" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/api-json.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/logback-rotated/json-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>3GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="org.sample.TruncMessageLogstashEncoder"/>
+    </appender>
+
+    <springProfile name="!ELK">
+        <root level="INFO">
+            <appender-ref ref="CONSOLE_PLAIN_TEXT"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="ELK">
+        <root level="INFO">
+            <appender-ref ref="ROLLING_FILE_JSON"/>
+        </root>
+    </springProfile>
+
+</configuration>
